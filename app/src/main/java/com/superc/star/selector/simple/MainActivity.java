@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         rationBar = findViewById(R.id.rationBar);
         rationBar.setImageResIds(R.mipmap.star_full_1, R.mipmap.star_half_1, R.mipmap.star_empty_1)
                 .setSelectNumber(2.4f)
+                .setEnable(true)
                 .launcher();
         rationBar1 = findViewById(R.id.rationBar1);
         rationBar1.setImageResIds(R.mipmap.star_full_1, 0, R.mipmap.star_empty_1)
