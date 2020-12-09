@@ -54,6 +54,8 @@ public class SuperRationBar extends View implements View.OnTouchListener {
     // 画笔
     private Paint mPaint;
 
+    private boolean enable = true;//是否可以选择
+
     public SuperRationBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
@@ -153,6 +155,17 @@ public class SuperRationBar extends View implements View.OnTouchListener {
         return this;
     }
 
+    /**
+     * 设置图片是否可以选择
+     *
+     * @param enable
+     * @return
+     */
+    public SuperRationBar setEnable(boolean enable) {
+        this.enable = enable;
+        return this;
+    }
+
     public SuperRationBar setSelectNumber(float selectNumber) {
         this.selectNumber = selectNumber;
         return this;
@@ -176,6 +189,7 @@ public class SuperRationBar extends View implements View.OnTouchListener {
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
+        if (!enable) return false;
         if (event.getAction() == MotionEvent.ACTION_DOWN
                 || event.getAction() == MotionEvent.ACTION_MOVE) {
             if (pointList != null) {
