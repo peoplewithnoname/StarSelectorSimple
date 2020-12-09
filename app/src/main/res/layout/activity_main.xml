@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.superc.star.selector.SuperRationBar
+        android:id="@+id/rationBar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        app:SuperRationBar_number="6"
+        app:SuperRationBar_startPadding="10dp"
+        app:SuperRationBar_startWidth="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mode="fixed" />
+
+    <com.superc.star.selector.SuperRationBar
+        android:id="@+id/rationBar1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        app:SuperRationBar_number="6"
+        app:SuperRationBar_startPadding="10dp"
+        app:SuperRationBar_startWidth="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rationBar"
+        app:mode="fixed" />
+
+
+    <com.superc.star.selector.SuperRationBar
+        android:id="@+id/rationBar2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        app:SuperRationBar_number="6"
+        app:SuperRationBar_startPadding="10dp"
+        app:SuperRationBar_startWidth="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rationBar1"
+        app:mode="scroll" />
+
+    <com.superc.star.selector.SuperRationBar
+        android:id="@+id/rationBar3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        app:SuperRationBar_number="6"
+        app:SuperRationBar_startPadding="10dp"
+        app:SuperRationBar_startWidth="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rationBar2"
+        app:mode="scroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SuperRationBar">
+        <attr name="SuperRationBar_number" format="integer" />
+        <attr name="SuperRationBar_startWidth" format="dimension" />
+        <attr name="SuperRationBar_startPadding" format="dimension" />
+        <attr name="mode">
+            <enum name="fixed" value="0" />
+            <enum name="scroll" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,3 @@
+include ':StarSelector'
+include ':app'
+rootProject.name = "StarSelectorSimple"
